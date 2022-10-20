@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>GameBattle</title>
+    <script defer src="./js/index.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main>
+        <section class="cmain_title">
+            <h1 class="title">
+                THE BIG BANG THEORY GAME
+                <br/>
+                ¡ROCK, PAPER, SCISSORS, LIZARD, SPOCK!
+            </h1>
+        </section>
+
+        <section class="cselect_character" id="select_character">
+            <h2 class="sub_title_one">Select your character:</h2>
+
+            <div class="cdiv_characters" id="div_characters" >
+                <!-- Insert characters dynamically from JS -->               
+            </div>
+
+            <button class="cbutton_character" id="button_character">Select</button>
+        </section>
+
+        <section class="cselect_attack" id="select_attack">
+            <div class="itemOne" id="div_player">
+                <p class="ctext_players">YOU</p>
+                <img src="./img/versus.png" alt="Image Player" id="image_player">
+                <p class="ctext_lives">Lives: <span id="lives_player">5</span></p>
+            </div>
+
+            <div class="itemTwo">
+                <img src="./img/versus.png" alt="Image VS" class="cimage_vs" id="image_vs">
+                <div class="crestart" id="restart">
+                    <button id="button_rest">Restart</button>
+                </div>
+            </div>
+
+            <div class="itemThree" id="div_enemy">
+                <p class="ctext_players">OPPONENT</p>
+                <img src="./img/versus.png" alt="Image Enemy" id="image_enemy">
+                <p class="ctext_lives">Lives: <span id="lives_enemy">5</span></p>
+            </div>
+
+            <div class="itemFour">
+                <p class="cmessage" id="message">¡Good Luck!</p>
+                <h2 class="sub_title_two">Select your attack</h2>
+            </div>
+
+            <div class="itemFive">
+                <button id="button_rock">Rock</button>
+                <button id="button_paper">Paper</button>
+                <button id="button_scissors">Scissors</button>
+                <button id="button_lizard">Lizard</button>
+                <button id="button_spock">Spock</button>
+            </div>
+
+            <div class="itemSix" id="list_player_attack">
+                <p class="character_players" id="character_player">???</p>
+            </div>
+
+            <div class="itemSeven" id="list_result">
+                <p class="cresult">result</p>
+            </div>
+
+            <div class="itemEight" id="list_enemy_attack">
+                <p class="character_players" id="character_enemy">???</p>
+            </div>
+        </section>
+
+        <section class="crules" id="rules">
+            <p>
+                RULES: As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons
+                spock, spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock,
+                Spock vaporizes rock, and as it always has, rock crushes scissors."
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>

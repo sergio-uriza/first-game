@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100%;
+    margin: 6px;
+    padding: 0px;
+    background-image: url(./img/backpicture.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    background-color: rgba(42, 42, 42, 0.90);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 760px;
+    min-width: 300px;
+    margin: 25% 0 100px 0;
+    border-radius: 2rem;
+    padding: 1.8rem 0.5rem 1rem 0.5rem;
+}
+
+/* PAGINA TITULO PRINCIPAL */
+/* H1 */
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: lightgray;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    margin: 0.3rem auto 2rem auto;
+}
+
+
+/* PAGINA SECCION SELECCION */
+/* H2 seleccion de personajes */
+.sub_title_one {
+    text-align: center;
+    margin: 0.5rem 0 1.2rem 0;
+    color: mintcream;
+    font-weight: bold;
+}
+
+/* Seccion seleccion de personajes */
+.cselect_character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Div seleccion - Filas de la lista de seleccion */
+.cdiv_characters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+/* Imagenes de la lista de seleccion */
+.cdiv_characters img {
+    height: 6.7rem;
+    border-radius: 1.2rem;
+    margin: 0 4px 6px 4px;
+}
+
+/* Etiquetas en general */
+label {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 74%;
+    color: #cfa225;
+    background-color: #b8b2c14d;
+    border-radius: 25px;
+    margin: 0.6rem 0;
+    cursor: pointer;
+    /*flex: 1 1 2rem;*/
+}
+
+label:hover {
+    transition-duration: 0.6s;
+    transform: scale(1.2);
+}
+
+/* Inputs en general */
+input {
+    display: none;
+    flex-grow: 1;
+    height: 1rem;
+}
+
+input:checked+label {
+    background-color: #8a2be29e;
+    transform: scale(1.2);
+}
+
+/* Boton de seleccion */
+.cbutton_character {
+    font-family: 'Poppins', sans-serif;
+    width: 5.6rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    margin: 1.5rem 0 0.5rem 0;
+    cursor: pointer;
+}
+
+.cbutton_character:hover {
+    font-weight: bold;
+    background-color: #D36B00;
+}
+
+/* Seccion de reglas */
+.crules {
+    font-style: oblique;
+    font-size: 0.8rem;
+    width: 80%;
+    color: white;
+    text-align: justify;
+}
+
+
+/* PAGINA SECCION DE ATAQUE */
+/* Seccion seleccion de ataque */
+.cselect_attack {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+/* Div imagen personaje jugador */
+.itemOne {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2.1rem;
+}
+
+/* Div imagen VS */
+.itemTwo {
+    grid-column: 2 / 3;
+    height: 90%;
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Imagen VS del duelo */
+.itemTwo img {
+    grid-row: 2/3;
+    height: 2.2rem;
+    border-radius: 3.1rem;
+    margin: 0 1.5rem;
+}
+
+/* Boton de reinicio */
+.crestart {
+    grid-row: 3 / 4;
+}
+
+#button_rest {
+    font-family: 'Poppins';
+    font-size: .8rem;
+    background-color: white;
+    color: black;
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: 5rem;
+}
+
+#button_rest:hover {
+    background-color: #ff1e00c4;
+    font-weight: bold;
+}
+
+/* Div imagen personaje enemigo */
+.itemThree {
+    grid-column: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2.1rem;
+}
+
+/* Imagenes jugadores del duelo */
+.itemOne img,
+.itemThree img {
+    height: 10rem;
+    border-radius: 1.8rem;
+    margin: 0 0.6rem;
+}
+
+/* Texto "you" y "opponent" */
+.ctext_players {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    color: #f7af42ed;
+}
+
+/* Texto vidas */
+.ctext_lives {
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 0.8rem;
+    color: #54cf46;
+    margin: 0.5rem 0;
+}
+
+/* Div Mensaje Combate y Texto Seleccion ataque */
+.itemFour {
+    grid-column: 1 / 4;
+    width: 90%;
+}
+
+/* Tablero de mensajes */
+.cmessage {
+    font-size: 0.87rem;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    padding: 0.3rem;
+    border-radius: 0.9rem;
+    margin: 1rem auto;
+}
+
+/* H2 seleccion de ataques */
+.sub_title_two {
+    text-align: center;
+    margin: 1.2rem 0 0.8rem 0;
+    color: mintcream;
+    font-weight: bold;
+}
+
+/* Div botones de ataque */
+.itemFive {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 1.5rem 0;
+}
+
+.itemFive button {
+    font-family: 'Poppins';
+    font-size: 0.85rem;
+    border-radius: 1.25rem;
+    height: 2.3rem;
+    width: 4.2rem;
+    margin: 0.2rem;
+    background-color: ghostwhite;
+    cursor: pointer;
+}
+
+.itemFive button:hover {
+    font-weight: bold;
+    background-color: #d26debcf;
+    border-color: currentColor;
+}
+
+/* Div lista ataques jugador */
+.itemSix {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.itemSix .character_players,
+.itemEight .character_players {
+    font-size: 1.18rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #cfa225;
+    border: 1px solid #d26debb0;
+    border-radius: 0.31rem;
+    padding: 0.31rem 0.62rem;
+    margin: 0.5rem 0;
+    min-width: 95%;
+    text-align: center;
+}
+
+.itemSix p,
+.itemEight p {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+    color: burlywood;
+}
+
+/* Div lista resultados */
+.itemSeven {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.itemSeven .cresult {
+    flex: 0 0 2.2rem;
+    margin: 0.5rem 0;
+}
+
+.itemSeven p {
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+    color: white;
+    margin: 0.2rem 0;
+}
+
+/* Div lista ataques enemigo */
+.itemEight {
+    grid-column: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+
+/* PAGINA RESPONSIVE */
+@media (max-width: 760px) {
+
+    /* Div seleccion - Filas de la lista de seleccion */
+    .cdiv_characters {
+        max-width: 400px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    /* Div seleccion - Filas de la lista de seleccion */
+    .cdiv_characters {
+        max-width: 300px;
+    }
+
+}
+
+@media (max-width: 280px) {
+
+    /* Div seleccion - Filas de la lista de seleccion */
+    .cdiv_characters {
+        flex-direction: column;
+    }
+
+}
