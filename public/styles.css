@@ -94,7 +94,7 @@ label {
     color: #cfa225;
     background-color: #b8b2c14d;
     border-radius: 25px;
-    margin: 0.6rem 0;
+    margin: 0.8rem 0;
     cursor: pointer;
     /*flex: 1 1 2rem;*/
 }
@@ -102,6 +102,16 @@ label {
 label:hover {
     transition-duration: 0.6s;
     transform: scale(1.2);
+}
+
+label .cpreference {
+    font-family: cursive;
+    font-style: oblique;
+    font-size: 0.6rem;
+    text-align: center;
+    line-height: 1.1;
+    color: white;
+    margin: 0.3rem 0 0.5rem 0;
 }
 
 /* Inputs en general */
@@ -222,8 +232,8 @@ input:checked+label {
     color: #f7af42ed;
 }
 
-/* Texto vidas */
-.ctext_lives {
+/* Texto victorias */
+.ctext_wins {
     font-family: cursive;
     font-style: oblique;
     font-size: 0.8rem;

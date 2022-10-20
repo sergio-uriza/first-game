@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameBattle</title>
     <script defer src="./js/index.js"></script>
     <link rel="stylesheet" href="./styles.css">
@@ -13,7 +14,7 @@
         <section class="cmain_title">
             <h1 class="title">
                 THE BIG BANG THEORY GAME
-                <br/>
+                <br>
                 ¡ROCK, PAPER, SCISSORS, LIZARD, SPOCK!
             </h1>
         </section>
@@ -21,8 +22,8 @@
         <section class="cselect_character" id="select_character">
             <h2 class="sub_title_one">Select your character:</h2>
 
-            <div class="cdiv_characters" id="div_characters" >
-                <!-- Insert characters dynamically from JS -->               
+            <div class="cdiv_characters" id="div_characters">
+                <!-- Insert characters dynamically from JS -->
             </div>
 
             <button class="cbutton_character" id="button_character">Select</button>
@@ -32,7 +33,7 @@
             <div class="itemOne" id="div_player">
                 <p class="ctext_players">YOU</p>
                 <img src="./img/versus.png" alt="Image Player" id="image_player">
-                <p class="ctext_lives">Lives: <span id="lives_player">5</span></p>
+                <p class="ctext_wins">Wins: <span id="victories_player">0</span></p>
             </div>
 
             <div class="itemTwo">
@@ -45,20 +46,16 @@
             <div class="itemThree" id="div_enemy">
                 <p class="ctext_players">OPPONENT</p>
                 <img src="./img/versus.png" alt="Image Enemy" id="image_enemy">
-                <p class="ctext_lives">Lives: <span id="lives_enemy">5</span></p>
+                <p class="ctext_wins">Wins: <span id="victories_enemy">0</span></p>
             </div>
 
             <div class="itemFour">
                 <p class="cmessage" id="message">¡Good Luck!</p>
-                <h2 class="sub_title_two">Select your attack</h2>
+                <h2 class="sub_title_two">Select your sequence</h2>
             </div>
 
-            <div class="itemFive">
-                <button id="button_rock">Rock</button>
-                <button id="button_paper">Paper</button>
-                <button id="button_scissors">Scissors</button>
-                <button id="button_lizard">Lizard</button>
-                <button id="button_spock">Spock</button>
+            <div class="itemFive" id="div_attacks">
+                <!-- Insert attacks dynamically from JS -->
             </div>
 
             <div class="itemSix" id="list_player_attack">
